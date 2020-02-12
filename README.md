@@ -6,6 +6,4 @@ Site de salão de beleza, com sistema de cadastro de clientes, um sistema simple
 Backend em PHP.
 
 
-<img src="images/log.png">
-
 #Aprendendo a programar: PHP.
