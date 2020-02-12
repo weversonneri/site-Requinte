@@ -24,25 +24,7 @@ $sql_query = $conexao->query($sql) or die($conexao->error);
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-
-        <a class="navbar-brand" href="index.php">Projeto</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a href="admin.php">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a href="config/logout.php"><span class="fas fa-sign-out-alt"></span> Sair </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php include("config/menuAdm.php"); ?>
     <!-- /Navbar -->
     <div class="subnavbar">
         <div class="subnavbar-inner">
@@ -99,7 +81,7 @@ $sql_query = $conexao->query($sql) or die($conexao->error);
     <script src="node_modules/popper.js/dist/popper.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    
+
     <!---- Data Table ---->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">

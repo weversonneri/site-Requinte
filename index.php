@@ -15,6 +15,7 @@ if (!isset($_SESSION)) session_start();
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <title>Index</title>
 </head>
 
@@ -33,7 +34,7 @@ if (!isset($_SESSION)) session_start();
     <?php endif; ?>
     <!-- /Navbar -->
 
-    <div class="container-fluid" id="banner-index">
+    <div class="container-fluid banner-index">
         <div class="titulo-index">
             <h1>Requinte</h1>
             <h2>SALÃO DE BELEZA E ESTÉTICA</h2>
@@ -41,17 +42,17 @@ if (!isset($_SESSION)) session_start();
         </div>
         <div class="row">
             <div class="col-sm info">
-                <hr class="bar01">
+                <hr>
                 <h3>ENDEREÇO</h3>
                 <h4>Brasília – DF</h4>
             </div>
             <div class="col-sm info">
-                <hr class="bar01">
+                <hr>
                 <h3>TELEFONE</h3>
                 <h4>(61) 9 8574-6779</h4>
             </div>
             <div class="col-sm info">
-                <hr class="bar01">
+                <hr>
                 <h3>Horário</h3>
                 <h4>Seg – Sab : 9:00 – 19:00</h4>
             </div>
@@ -59,11 +60,11 @@ if (!isset($_SESSION)) session_start();
 
     </div>
 
-    <div class="container-fluid" id="salon">
+    <div class="container-fluid salon">
         <div class="row">
             <div class="col-sm salon-info">
-                <h3>CONHEÇA O SALÃO</h3>
-                <hr class="bar02">
+                <h2>Conheça o salão</h2>
+                <hr>
                 <p>
                     Oferecemos um ambiente exclusivo ao público, com local diferenciado e confortável e um atendimento personalizado, com o propósito de oferecer a melhor experiência para o cliente.
                 </p>
@@ -75,19 +76,44 @@ if (!isset($_SESSION)) session_start();
         </div>
     </div>
 
-    <div class="container-fluid" id="services">
-        <h3>SERVIÇOS</h3>
-        <hr class="bar02">
-
+    <div class="container-fluid servicos">
+        <h2>Serviços</h2>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="images/corte.png" alt="">
+                    <h3>Corte</h3>
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/alisamento.png" alt="">
+                    <h3>Alisamento</h3>
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/unha.png" alt="">
+                    <h3>Unha</h3>
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/sobrancelha.png" alt="">
+                    <h3>Sobrancelha</h3>
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/make.png" alt="">
+                    <h3>Maquiagem</h3>
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/estetica.png" alt="">
+                    <h3>Estética</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!------- Alguns Trabalhos --------->
     <div class="container-fluid trabalhos">
         <div class="container">
-
-            <h3 class="font-weight-light text-lg-left">ALGUNS TRABALHOS</h3>
-
-            <hr class="mt-2 mb-5">
+            <h2>Alguns Trabalhos</h2>
+            <hr>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a href="images/pic06.jpeg" class="fancybox" rel="ligthbox">

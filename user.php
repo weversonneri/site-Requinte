@@ -25,31 +25,7 @@ $sql_query = $conexao->query($sql) or die($conexao->error);
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="user.php">Agendamento</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user-circle"></i> <?php echo $_SESSION['UsuarioNome'] ?> <b class="caret"></b></a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="#"><span class="far fa-address-card"></span>Perfil</a></li>
-                            <li><a href="config/logout.php"><span class="fas fa-sign-out-alt"></span> Sair </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <?php include("config/menuUsr.php"); ?>
         <!-- /Navbar -->
     </header>
 
@@ -59,7 +35,7 @@ $sql_query = $conexao->query($sql) or die($conexao->error);
     </div>
     <?php
     if (isset($_SESSION['ok_agendamento'])) :
-        ?>
+    ?>
         <div class="is-success">
             <script>
                 alert("Agendamento efetuado com sucesso!")
@@ -71,7 +47,7 @@ $sql_query = $conexao->query($sql) or die($conexao->error);
     ?>
     <?php
     if (isset($_SESSION['erro_agendamento'])) :
-        ?>
+    ?>
         <div class="is-info">
             <script>
                 alert("Esse serviço não possui vaga no horário escolhido.")

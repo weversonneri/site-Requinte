@@ -13,7 +13,7 @@ if (!isset($_SESSION)) session_start();
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-      <ul class="navbar-nav" style="margin-right:22px;">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a href="index.php">Home</a>
         </li>
@@ -22,7 +22,7 @@ if (!isset($_SESSION)) session_start();
           <a href="user.php">Agendamento</a>
         </li>
       </ul>
-      <ul class="navbar-nav" style="font-size:14px;">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a href="login.php"> Login <span class="fas fa-sign-in-alt"></span></a>
         </li>
