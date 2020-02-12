@@ -6,6 +6,6 @@ Site de salão de beleza, com sistema de cadastro de clientes, um sistema simple
 Backend em PHP.
 
 
-<img src=”https://github.com/weversonneri/site-Requinte/blob/master/images/logo1.png”>
+<img src=”/weversonneri/site-Requinte/blob/master/images/logo1.png”>
 
 #Aprendendo a programar: PHP.
