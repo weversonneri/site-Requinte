@@ -12,8 +12,10 @@ if (!isset($_SESSION)) session_start();
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <title>Index</title>
@@ -25,7 +27,7 @@ if (!isset($_SESSION)) session_start();
         include("config/menu.php");
     ?>
     <?php if (isset($_SESSION['UsuarioEmail'])) : ?>
-        <?php if ($_SESSION['UsuarioNivel'] == 0) {
+    <?php if ($_SESSION['UsuarioNivel'] == 0) {
             include("config/menuUsr.php");
         } elseif ($_SESSION['UsuarioNivel'] == 1) {
             include("config/menuAdm.php");
@@ -38,7 +40,7 @@ if (!isset($_SESSION)) session_start();
         <div class="titulo-index">
             <h1>Requinte</h1>
             <h2>SALÃO DE BELEZA E ESTÉTICA</h2>
-            <a href="http://localhost/requinte/config/agendamento.php">RESERVE UM HORÁRIO</a>
+            <a href="#">RESERVE UM HORÁRIO</a>
         </div>
         <div class="row">
             <div class="col-sm info">
@@ -66,9 +68,10 @@ if (!isset($_SESSION)) session_start();
                 <h2>Conheça o salão</h2>
                 <hr>
                 <p>
-                    Oferecemos um ambiente exclusivo ao público, com local diferenciado e confortável e um atendimento personalizado, com o propósito de oferecer a melhor experiência para o cliente.
+                    Oferecemos um ambiente exclusivo ao público, com local diferenciado e confortável e um atendimento
+                    personalizado, com o propósito de oferecer a melhor experiência para o cliente.
                 </p>
-                <a href="http://localhost/requinte/config/agendamento.php">VENHA CONHECER</a>
+                <a href="#">VENHA CONHECER</a>
             </div>
             <div class="col-sm salon-info">
                 <img src="images/salon.jpg">
@@ -193,9 +196,12 @@ if (!isset($_SESSION)) session_start();
                 <div class="col">
                     <div class="social">
                         <ul class="social-share">
-                            <li><a href="https://pt-br.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></i></a></li>
-                            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></i></a></li>
-                            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://pt-br.facebook.com/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></i></a></li>
+                            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></i></a>
+                            </li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>
                     </div>
@@ -226,16 +232,16 @@ if (!isset($_SESSION)) session_start();
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".fancybox").fancybox({
                 openEffect: "none",
                 closeEffect: "none"
             });
 
-            $(".zoom").hover(function() {
+            $(".zoom").hover(function () {
 
                 $(this).addClass('transition');
-            }, function() {
+            }, function () {
 
                 $(this).removeClass('transition');
             });
